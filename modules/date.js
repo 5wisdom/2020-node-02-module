@@ -22,7 +22,7 @@ const nowDateKorean = () => {
 //const obj = { moment,nowDateIso,  nowDateKorean} //한줄로도 사용가능하다
 
 //module.exports = obj;
-module.exports = { moment,nowDateIso,  nowDateKorean};
+module.exports = { moment, nowDateIso,  nowDateKorean};
 
 
 //console.log(new Date());//2020-10-20T12:05:44.474Z 자바스크립트 날짜표기법

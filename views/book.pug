@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title 도서리스트
+		link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+	body
+		//- 퍼그에러
+		//- 퍼그사용시에는 보기에서 공백렌더링을 켜놓고 ㅎ ㅏ자
+		//- 중간에 탭이 들어가 있으면 에러가 나기 쉽다.
+		.container
+			table.table
+				thead.thead-dark
+					tr
+						th 번호
+						th 제목
+						th 내용
+				tbody
+					each v in books
+						tr
+							td= v.id
+							td= v.title
+							td= v.content
